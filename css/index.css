@@ -82,7 +82,7 @@ nav ul li ul li a{
         width: 100%
     }
 }
-@media screen and (min-device-width : 320px)and (max-width : 480px){
+@media screen and (min-device-width : 320px) and (max-width : 480px){
 
     #chefBoyarme{
     width: 100%;
