@@ -1,0 +1,159 @@
+
+@media screen and (min-device-width : 320px) and (max-width : 480px){
+    * {
+       overflow: hidden;
+    }
+ body {
+     background-color: #F3E1A1;
+}
+    #chefBoyarme{
+    width: 100%;
+    background-color: #8191AB;
+    padding: .5em;
+    font-size: 20px;
+}
+    #homeButton{
+    margin-left: 20px;
+    }
+    nav {
+    width: 100%;
+    height: 60px;
+    background-color: #922D03;
+}
+    nav ul {
+    float: left;
+}
+    nav ul li {
+    width: 4.8em;
+    float: left;
+    list-style: none;
+    position: relative;
+   
+
+}
+    nav ul li a {
+    font-family: arial;
+    color: #222;
+    font-size: 10px;
+    display: block;
+    text-decoration: none;
+    border-style: none;
+
+}
+    nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+
+}
+    nav ul li ul li {
+    width: 180px;
+    border-radius: 4px;
+}
+    nav ul li ul li a{
+    padding:  8px 14px;
+    border-style: none;
+
+}
+    form{
+    width: 10em; 
+    height: 5em;
+
+    }
+    form button{
+        visibility: hidden;
+    }
+  /*  #endForm{
+        height: 20em;
+        width: 20em;
+    }
+    #endForm input{
+
+        width: 10em;
+        height: 20px;;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+*/
+
+}
+@media screen and (aspect-ratio: 16/9 ){
+    *{
+        overflow: hidden;
+    }
+ body {
+     background-color: #F3E1A1;
+}
+
+
+    #chefBoyarme{
+    width: 100%;
+    background-color: #8191AB;
+    padding: .5em;
+    font-size: 70px;
+            text-align: center;
+}
+    #homeButton{
+    margin-left: 20px;
+    }
+    nav {
+    width: 100%;
+    height: 60px;
+    background-color: #922D03;
+}
+    nav ul {
+    float: left;
+}
+    nav ul li {
+    width: 25em;
+    float: left;
+    list-style: none;
+    position: relative;
+   
+
+}
+    nav ul li a {
+    font-family: arial;
+    color: #222;
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    border-style: none;
+
+}
+    nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+
+}
+    nav ul li ul li {
+    width: 180px;
+    border-radius: 4px;
+}
+    nav ul li ul li a{
+    padding:  8px 14px;
+    border-style: none;
+
+}
+    form{
+    width: 10em; 
+    height: 5em;
+
+    }
+    #endForm{
+    height: 30em;
+    width: 30em;
+    font-size: 35px;
+    }
+    #endForm input{
+    width: 20em;
+    height: 3em;
+    padding-top: 5px;
+    margin-top: 10px;
+    }
+
+
+}

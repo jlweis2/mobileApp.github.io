@@ -1,73 +1,10 @@
- body {
-     background-color: #F3E1A1;
-}
-main h1{
-    font-size: 7em;
-    text-align: center;
-}
-#chefBoyarme{
-    width: 100%;
-    background-color: #8191AB;
-    padding: .5em;
-}
+.hidden {visibility: hidden;}
+.unhidden {visibility: visible;}
 
-/*Nav bar contents*/
 
-nav {
-    width: 100%;
-    height: 60px;
-    background-color: #922D03;
-}
-
-nav ul {
-    float: left;
-}
-nav ul li {
-    width: 25em;
-    float: left;
-    list-style: none;
-    position: relative;
-
-}
-nav ul li a {
-    font-family: arial;
-    color: #222;
-    font-size: 14px;
-    display: block;
-    padding: 22px 14px;
-    text-decoration: none;
-    border-style: solid;
-
-}
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 0px 0px 4px 4px;
-}
-
-nav ul li ul li {
-    width: 180px;
-    border-radius: 4px;
-}
-nav ul li ul li a{
-    padding:  8px 14px;
-
-}
-
-/*----------------------------------*/
-#imageOfSpaghetti{
-    position: relative;
-    left: 25%;
-}
-#imageOfTacos{
-    position: relative;
-    left: 25%;
-    top: 20px;
-
-}
 @media screen and (min-device-width : 320px) and (max-width : 480px){
+
+    /*styling for home page*/
 #imageOfSpaghetti h1{
     font-size: 10px;
 }
@@ -81,19 +18,389 @@ nav ul li ul li a{
     font-size: 10px;
 
 }
+    /*styling for home page*/
+
+/* styleing for my recipes tab */    
+    #allButton{
+    position: absolute;
+    left: 120px;
+    top: 150px;    
+    }
+    #favButton{
+    position: absolute;
+    left: 95px;
+    top: 230px;
+    }
+/* styleing for my recipes tab */  
+   
+/* styleing for my shopping list tab */    
+    #firstCheckbox{
+        position: absolute;
+        left: 2em;
+        top: 8em;
+        font-size: 20px;
+    }
+    #secondCheckbox{
+        position: absolute;
+        left: 2em;
+        top: 10em;
+        font-size: 20px;
+    }
+    #firstCheckbox input{
+    height: 15px;
+    width: 15px;
+    }
+    #secondCheckbox input{
+    height: 15px;
+    width: 15px;
+    }
+    #addButton{
+    font-size: 20px;
+    position: absolute;
+    top: 12em;
+    left: 2em;
+    }  
+/* styleing for my shopping list tab */   
+
+/* styleing for my add a recipe tab */   
+    .button{
+    font-size: 20px;
+    margin-top: 2em;
+    } 
+/* styleing for my add a recipe tab */   
+
+/* styleing for my all recipes tab */   
+#imageOfSpaghettiOnAll h1{
+    font-size: 10px;
 }
+#imageOfSpaghettiOnAll a img{
+    width: 10em;
+    }    
+#imageOfTacosOnAll img{
+    width: 10em;
+}
+#imageOfTacosOnAll h1{
+    font-size: 10px;
+} 
+/* styleing for my all recipes tab */   
+
+/* styleing for my fav recipes tab */  
+    #imageOfSpaghettiOnFavs a img{
+    width: 10em;
+    }    
+    #imageOfSpaghettiOnFavs h1{
+    font-size: 10px;
+    }
+/* styleing for my fav recipes tab */ 
+    
+/* styleing for my ingredients tab */ 
+    #imageOfSpaghettiOnIngred img {
+        width: 12em;
+        position: relative;
+        left: 20%;
+        padding-top: 10px;
+    }
+    .ingredientsAndInstructions{
+    font-size: 10px;
+    border-width: 2px;
+    border-style: solid;
+    position: relative;
+    margin-left: 35%;
+    }
+    #ingredients{
+    position: absolute;
+    top: 25em;
+    left: -4em;
+    }
+    #instructions{
+    position: absolute;
+    top: 25em;
+    left: 5em;
+    }
+    #time{
+    position: absolute;
+    left: 12em;
+    top: 28em;
+    font-size: 10px;
+    }
+    #firstCheckboxOnIngredients{
+    position: absolute;
+    left: 3em;
+    top: 32em;
+    font-size: 10px;
+    }
+    #secondCheckboxOnIngredients{
+    position: absolute;
+    left: 3em;
+    top: 34em;
+    font-size: 10px;
+    }
+    #firstCheckboxOnIngredients input{
+    height: 10px;
+    width: 10px;
+    }
+    #secondCheckboxOnIngredients input{
+    height: 10px;
+    width: 10px;
+    }
+    label button{
+    font-size: 5px;
+    }
+/* styleing for my ingredients tab */ 
+    
+/* styleing for my instructions tab */ 
+   #imageOfSpaghettiOnInstru img {
+    width: 12em;
+    position: relative;
+    left: 20%;
+    padding-top: 10px;
+    }
+    #textboxOfInstructions{
+    position: absolute;
+    top: 20em;
+    left: 3em;
+    width: 15em;
+    height: 7em;
+    background-color: white;
+    padding: 1em;
+    }
+    #textboxOfInstructions ul li {
+    font-size: 10px;
+    }
+    #textboxOfInstructions button {
+    font-size: 10px;
+    } 
+
+/* styleing for my instructions tab */ 
+    
+/* styleing for my type in recipe tab */ 
+
+    #endForm{
+        height: 20em;
+        width: 12em;
+    }
+    #endForm input{
+        width: 12em;
+        height: 30px;
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+/* styleing for my type in recipe tab */    
+}/*end of media query */
 @media screen and (aspect-ratio: 16/9 ){
 #imageOfSpaghetti h1{
+    position: relative;
+    left: 25%;
     font-size: 30px;
 }
-#imageOfSpaghetti a img{
-        width: 40em;
+#imageOfSpaghetti img{
+    position: relative;
+    left: 25%;
+    top: 20px;
+    width: 40em;
     }    
 #imageOfTacos img{
+    position: relative;
+    left: 25%;
+    top: 20px;
     width: 40em;
 }
 #imageOfTacos h1{
+    position: relative;
     font-size: 30px;
+    left: 25%;
 
 }
+  
+/* styleing for my recipes tab */    
+    #allButton{
+    position: absolute;
+    left: 8.5em;
+    top: 3em;
+    font-size: 100px;
+    }
+    #favButton{
+    position: absolute;
+    left: 7em;
+    top: 6em;
+    font-size: 100px;
+    }
+/* styleing for my recipes tab */  
+   
+/* styleing for my shopping list tab */    
+    #firstCheckbox{
+    position: absolute;
+    left: 5em;
+    top: 8em;
+    font-size: 50px;
+    }
+    #secondCheckbox{
+    position: absolute;
+    left: 5em;
+    top: 10em;
+    font-size: 50px;
+    }
+    #firstCheckbox input{
+    height: 25px;
+    width: 25px;
+    }
+    #secondCheckbox input{
+    height: 25px;
+    width: 25px;
+    }
+    #addButton{
+    font-size: 40px;
+    position: absolute;
+    top: 15em;
+    left: 7em;
+    }  
+/* styleing for my shopping list tab */   
+
+/* styleing for my add a recipe tab */   
+    .button{
+    font-size: 50px;
+    margin-top: 2em;
+    } 
+/* styleing for my add a recipe tab */   
+
+/* styleing for my all recipes tab */   
+#imageOfSpaghettiOnAll h1{
+    position: relative;
+    left: 25%;
+    font-size: 30px;
 }
+#imageOfSpaghettiOnAll a img{
+    position: relative;
+    left: 25%;
+    top: 20px;
+    width: 40em;
+    }    
+#imageOfTacosOnAll img{
+    position: relative;
+    left: 25%;
+    top: 20px;
+    width: 40em;
+}
+#imageOfTacosOnAll h1{
+    position: relative;
+    font-size: 30px;
+    left: 25%;
+} 
+/* styleing for my all recipes tab */   
+
+/* styleing for my fav recipes tab */  
+    #imageOfSpaghettiOnFavs{
+    position: relative;
+    left: 25%;
+    top: 20px;
+    width: 50em; 
+    }    
+    #imageOfSpaghettiOnFavs h1{
+    position: relative;
+    font-size: 30px;
+    }
+/* styleing for my fav recipes tab */ 
+    
+/* styleing for my ingredients tab */ 
+    #imageOfSpaghettiOnIngred img {
+    width: 50em;
+    position: relative;
+    left: 20%;
+    top: 1em;
+    }
+    .ingredientsAndInstructions{
+    font-size: 30px;
+    border-style: solid;
+    border-width: 4px;
+
+    }
+    #ingredients{
+    position: absolute;
+    top: 22em;
+    left: 12em;
+    }
+    #instructions{
+    position: absolute;
+    top: 22em;
+    left: 29em;
+    }
+    #time{
+    position: absolute;
+    left: 16em;
+    top: 24em;
+    font-size: 30px;
+    }
+    #firstCheckboxOnIngredients{
+    position: absolute;
+    left: 16em;
+    top: 28em;
+    font-size: 30px;
+    }
+    #secondCheckboxOnIngredients{
+    position: absolute;
+    left: 16em;
+    top: 30em;
+    font-size: 30px;
+    }
+    #firstCheckboxOnIngredients input{
+    height: 20px;
+    width: 20px;
+    }
+    #secondCheckboxOnIngredients input{
+    height: 20px;
+    width: 20px;
+    }
+    label button{
+    font-size: 20px;
+    }
+/* styleing for my ingredients tab */ 
+    
+/* styleing for my instructions tab */ 
+   #imageOfSpaghettiOnInstru img {
+    width: 50em;
+    position: relative;
+    left: 20%;
+    top: 1em;
+    }
+
+    #textboxOfInstructions{
+    background-color: white;
+    position: absolute;
+    top: 55em;
+    left: 25em;
+    width: 50em;
+    height: 20em;
+    padding: 2em;
+    }
+    #textboxOfInstructions ul li {
+    font-size: 30px;
+}
+    #textboxOfInstructions button {
+    font-size: 30px;
+} 
+
+/* styleing for my instructions tab */ 
+    
+/* styleing for my type in recipe tab */ 
+
+    #endForm{
+    height: 30em;
+    width: 30em;
+    font-size: 35px;
+    }
+    #endForm input{
+    width: 20em;
+    height: 3em;
+    padding-top: 5px;
+    margin-top: 10px;
+    }
+#endForm input{
+    display: block;
+    width: 30em;
+    height: 5em;
+
+}
+/* styleing for my type in recipe tab */
+    
+}/* end of media query */    
