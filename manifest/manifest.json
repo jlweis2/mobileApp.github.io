@@ -1,17 +1,20 @@
 {
-  "name": "Chef Boyarme",
-  "description": "App that allows you to add your own recipes",
-  "version": "0.0.0.1",
-  "manifest_version": 2,
-  "icons": {
-    "128": "128.png"
-  },
-  "app": {
-    "urls": [
-      "https://jlweis2.github.io/mobileApp.github.io/"
+    "background_color": "#F3E1A1",
+    "description": "App that allows you to add your own recipes",
+    "display": "fullscreen",
+    "icons": [
+        {
+        "src": "192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+        }
+    
     ],
-    "launch": {
-      "web_url": "https://jlweis2.github.io/mobileApp.github.io/"
-    }
-  }
+    "manifest_version": 2,
+    "name": "Chef Boyarme",
+    "orientation": "portrait",
+    "short_name": "Chef",
+    "start_url": "https://jlweis2.github.io/mobileApp.github.io/",
+    "theme_color": "#F3E1A1",
+    "version": "0.1"
 }
