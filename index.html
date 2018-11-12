@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Boyarme</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="manifest/manifest.json" rel="manifest">
+    <link rel="stylesheet"  href="css/index.css"/>   
+    <link rel="stylesheet" href="css/mediaForAll.css"/>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+    <script src="js/visibility.js"></script>
+    <!--this is the javascript to hide and unhide things -->
+
+
+    
+
+</head>
+<body>
+<main>
+<!-- This is the top banner-->
+<div >
+    <h1 id="chefBoyarme">Chef Boyarme</h1>
+</div>
+  <!-- This is the top banner-->
+</main>
+    <!-- This is the navigation bar-->
+<nav>
+
+    <ul class="nav navbar-nav">
+        <li><a href="javascript:onclick=homePage()">Home</a</li>
+        <li><a href="javascript:onclick=myRecipes()">My Recipes</a></li>
+        <li><a href="javascript:onclick=shoppingPage()">Shopping List</a></li>
+        <li><a href="javascript:onclick=addARecipePage()">Add A Recipe</a></li>
+    </ul>
+</nav>
+        <!-- Search in nav bar-->
+        <form class="navbar-form navbar-left search" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+    </form>
+
+        <!-- Search in nav bar-->
+
+    <!-- End of the navigation bar-->
+    <div id="homePageItself" class="unhidden contentOnPage"><!-- all elements on home page -->
+<div id="imageOfSpaghetti">
+    <h1>Spaghetti</h1>
+    <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
+</div>
+<div id="imageOfTacos">
+    <h1>Tacos</h1>
+    <img src="images/tacos.jpg">
+</div>
+    </div><!-- all elements on home page -->
+    
+    
+    <div id="recipes" class="hidden "><!--all elements of my recipes page -->
+<div class="centerContent">
+<div>
+    <button type="button" id="allButton" onclick="allRecipesPage()">ALL</button>
+</div>
+ <div>
+     <button type="button" id="favButton" onclick="favRecipesPage()">FAVORITES</button>
+</div>
+</div>
+    </div><!--all elements of my recipes page -->
+    
+    
+    <div id="shopping" class="hidden"><!--all elements of my shopping list page -->
+    <label id="firstCheckbox">Spaghetti Sauce
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label id="secondCheckbox">Spaghetti Noodles
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<button id="addButton">Add An Item</button>    
+    </div><!--all elements of my shopping list page -->
+    
+    <div id="addARecipe" class="hidden contentOnPage"><!--all elements of my add a recipe page -->
+        <a href="javascript:onclick=typeInRecipePage()"><button class="button">Type in Recipe</button><br></a>
+           
+    
+    </div>
+    
+    <div id="allRecipes" class="hidden contentOnPage"><!--all elements of my all recipes page -->
+        <div id="imageOfSpaghettiOnAll">
+            <h1>Spaghetti</h1>
+             <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
+        </div>
+        <div id="imageOfTacosOnAll">
+            <h1>Tacos</h1>
+            <img src="images/tacos.jpg">
+        </div>
+    </div><!--all elements of my all recipes page -->
+    
+    <div id="favRecipes" class="hidden contentOnPage"><!--all elements of my favorites recipes page -->
+        <div id="imageOfSpaghettiOnAll">
+            <h1>Spaghetti</h1>
+            <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
+        </div>
+    </div><!--all elements of my favorites recipes page -->
+    
+    <div id="ingredientsPageItself" class="hidden contentOnPage"><!--all elements of ingreidents page -->
+<div id="imageOfSpaghettiOnIngred">
+      <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
+</div>
+    <h1><a href="javascript:onclick=ingredientsPage()" class="ingredientsAndInstructions" id="ingredients" >Ingredients</a></h1>
+    <h1><a href="javascript:onclick=instructionPage()" class="ingredientsAndInstructions" id="instructions" >Instructions</a></h1>
+    <h3 id="time">Time: 30 Minutes</h3>
+    
+    <label id="firstCheckboxOnIngredients">Ingredient One
+  <input type="checkbox">
+  <span class="checkmark"></span><button>Add to Shopping List</button>
+</label>
+
+<label id="secondCheckboxOnIngredients">Ingredient Two
+  <input type="checkbox">
+  <span class="checkmark"></span><button>Add to Shopping List</button>
+</label>
+    </div><!--all elements of ingreidents page -->
+    
+    <div id="instructionPageItself" class="hidden contentOnPage"><!--all elements of instructions page -->
+        <div id="imageOfSpaghettiOnInstru">
+        <img src="images/spaghetti.jpg">
+        </div>
+        <h1><a href="javascript:onclick=ingredientsPage()" class="ingredientsAndInstructions" id="ingredients" >Ingredients</a></h1>
+        <h1><a href="javascript:onclick=instructionPage()" class="ingredientsAndInstructions" id="instructions" >Instructions</a></h1>
+        <div id="textboxOfInstructions">
+            <ul>
+            <li>Instuction One</li>  
+            <li>Instuction Two</li>  
+            <li>Instuction Three</li>  
+            </ul>
+            <button>Add Instruction</button>
+        </div>    
+    </div><!--all elements of instructions page -->
+    
+    <div id="typeInRecipePageItself" class="hidden contentOnPage"><!--all elements of type in recipe page -->
+        <form id="endForm">
+        Name of Recipe:<br>
+        <input type="text" name="Name of Recipe">
+        Time it takes to make:<br>
+        <input type="text" name="time">
+        Ingredients Seperated by a comma:<br>
+        <input type="text" name="ingredients">
+        Instructions Seperated by a comma:<br>
+        <input type="text" name="instructions">
+        </form>
+        <button id="submitRecipe" >Submit</button>
+    </div><!--all elements of type in recipe page -->
+    
+</body>
+</html>
