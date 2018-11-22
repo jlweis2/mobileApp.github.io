@@ -3,12 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chef Boyarme</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet"  href="css/index.css"/>   
-    <link rel="stylesheet" href="css/mediaForAll.css"/>
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Boyarme</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="manifest/manifest.json" rel="manifest">
+    <link rel="stylesheet"  href="css/index.css"/>   
+
     <script src="js/visibility.js"></script>
     <!--this is the javascript to hide and unhide things -->
 
@@ -25,110 +28,210 @@
   <!-- This is the top banner-->
 </main>
     <!-- This is the navigation bar-->
-<nav>
-
-    <ul class="nav navbar-nav">
-        <li><a href="javascript:onclick=homePage()">Home</a</li>
-        <li><a href="javascript:onclick=myRecipes()">My Recipes</a></li>
-        <li><a href="javascript:onclick=shoppingPage()">Shopping List</a></li>
-        <li><a href="javascript:onclick=addARecipePage()">Add A Recipe</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="javascript:onclick=homePage()" style="color: white;">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="javascript:onclick=myRecipes()" style="color: white;">My Recipes</a>
+      <a class="nav-item nav-link" href="javascript:onclick=shoppingPage()" style="color: white;">Shopping List</a>
+      <a class="nav-item nav-link" href="javascript:onclick=addARecipePage()" style="color: white;">Add A Recipe</a>
+    </div>
+  </div>
 </nav>
-        <!-- Search in nav bar-->
-        <form class="navbar-form navbar-left search" action="/action_page.php">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Search</button>
-    </form>
 
-        <!-- Search in nav bar-->
+<section id="...">
+    <div class="container">
 
+</div>
+    </section>
     <!-- End of the navigation bar-->
     <div id="homePageItself" class="unhidden"><!-- all elements on home page -->
-<div id="imageOfSpaghetti">
-    <h1>Spaghetti</h1>
-    <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
-</div>
-<div id="imageOfTacos">
-    <h1>Tacos</h1>
-    <img src="images/tacos.jpg">
-</div>
+<section>
+    <div class="album py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/spaghetti.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-text">Spaghetti</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="javascript:onclick=ingredientsPage()"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">60 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/tacos.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-text">Tacos</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">30 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
     </div><!-- all elements on home page -->
     
-    
-    <div id="recipes" class="hidden"><!--all elements of my recipes page -->
-<div>
-    <button type="button" id="allButton" onclick="allRecipesPage()">ALL</button>
+
+    <div id="recipes" class="hidden "><!--all elements of my recipes page -->
+<section>
+<div class="container contentsOfAll">
+<button type="button" class="btn btn-primary btn-light" onclick="allRecipesPage()">ALL</button>
+<button type="button" class="btn btn-secondary btn-light" onclick="favRecipesPage()">FAVORITES</button>
 </div>
- <div>
-     <button type="button" id="favButton" onclick="favRecipesPage()">FAVORITES</button>
-</div>
+</section>
     </div><!--all elements of my recipes page -->
     
     
     <div id="shopping" class="hidden"><!--all elements of my shopping list page -->
-    <label id="firstCheckbox">Spaghetti Sauce
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<label id="secondCheckbox">Spaghetti Noodles
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<button id="addButton">Add An Item</button>    
+<section class="contentsOfAll">
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Spaghetti Sauce
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+  <label class="form-check-label" for="defaultCheck2">
+    Spaghetti Noodles
+  </label>
+</div>
+<button type="button" class="btn btn-secondary btn-light" >Add An Item</button>    
+</section>
     </div><!--all elements of my shopping list page -->
     
     <div id="addARecipe" class="hidden"><!--all elements of my add a recipe page -->
-        <a href="javascript:onclick=typeInRecipePage()"><button class="button">Type in Recipe</button><br></a>
-        <button class="button">Scan Recipe</button>    
-    
-    </div>
+    <section class="contentsOfAll">
+    <button type="button" class="btn btn-secondary btn-light" onclick="javascript:onclick=typeInRecipePage()">Type in Recipe</button>
+    </section>
+    </div><!--all elements of add a recipe page -->
     
     <div id="allRecipes" class="hidden"><!--all elements of my all recipes page -->
-        <div id="imageOfSpaghettiOnAll">
-            <h1>Spaghetti</h1>
-             <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
+    <section class="contentsOfAll">
+    <div class="album py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/spaghetti.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-text">Spaghetti</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="javascript:onclick=ingredientsPage()"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">60 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="images/tacos.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-text">Tacos</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">30 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="imageOfTacosOnAll">
-            <h1>Tacos</h1>
-            <img src="images/tacos.jpg">
-        </div>
-    </div><!--all elements of my all recipes page -->
+      </div>
+</section>
+    </div><!--end ofall elements of my all recipes page -->
     
     <div id="favRecipes" class="hidden"><!--all elements of my favorites recipes page -->
-        <div id="imageOfSpaghettiOnFavs">
-    <h1>Spaghetti</h1>
-      <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
+    <section class="contentsOfAll">
+    <div class="album py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-6 box-shadow">
+                <img class="card-img-top" src="images/spaghetti.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h2 class="card-text">Spaghetti</h2>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="javascript:onclick=ingredientsPage()"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">60 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+</section>
     </div><!--all elements of my favorites recipes page -->
     
     <div id="ingredientsPageItself" class="hidden"><!--all elements of ingreidents page -->
-<div id="imageOfSpaghettiOnIngred">
-      <a href="javascript:onclick=ingredientsPage()"><img src="images/spaghetti.jpg" ></a>
-</div>
-    <h1><a href="javascript:onclick=ingredientsPage()" class="ingredientsAndInstructions" id="ingredients" >Ingredients</a></h1>
-    <h1><a href="javascript:onclick=instructionPage()" class="ingredientsAndInstructions" id="instructions" >Instructions</a></h1>
-    <h3 id="time">Time: 30 Minutes</h3>
-    
-    <label id="firstCheckboxOnIngredients">Ingredient One
-  <input type="checkbox">
-  <span class="checkmark"></span><button>Add to Shopping List</button>
-</label>
-
-<label id="secondCheckboxOnIngredients">Ingredient Two
-  <input type="checkbox">
-  <span class="checkmark"></span><button>Add to Shopping List</button>
-</label>
+    <section class="contentsOfAll imageOnDetails">
+        <img src="images/spaghetti.jpg" class="img-fluid" alt="Responsive image">
+        <div class="container ingredientsAndInstructions">
+        <a href="javascript:onclick=ingredientsPage()"><button type="button" class="btn btn-secondary btn-light">Ingredients</button></a>
+        <a href="javascript:onclick=instructionPage()"><button type="button" class="btn btn-secondary btn-light">Instructions</button></a>
+        </div>
+        <br>
+        <div class="form-check">
+            <label class="form-check-label" for="defaultCheck1">Ingredient 1</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="defaultCheck1">Ingredient 2</label>
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary btn-light marginAtBottom" >Add An Ingredient</button>
+    </section>
     </div><!--all elements of ingreidents page -->
-    
+
     <div id="instructionPageItself" class="hidden"><!--all elements of instructions page -->
-        <div id="imageOfSpaghettiOnInstru">
+    <section class="contentsOfAll imageOnDetails">
+        <img src="images/spaghetti.jpg" class="img-fluid" alt="Responsive image">
+        <div class="container ingredientsAndInstructions">
+        <a href="javascript:onclick=ingredientsPage()"><button type="button" class="btn btn-secondary btn-light">Ingredients</button></a>
+        <a href="javascript:onclick=instructionPage()"><button type="button" class="btn btn-secondary btn-light">Instructions</button></a>
+        </div>
+        <br>
+        <div class="form-check">
+            <label class="form-check-label" for="defaultCheck1">Instruction 1</label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="defaultCheck1">Instruction 2</label>
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary btn-light marginAtBottom" >Add An Instruction</button>
+    </section>
+        <!--<div >
         <img src="images/spaghetti.jpg">
         </div>
-        <h1><a href="javascript:onclick=ingredientsPage()" class="ingredientsAndInstructions" id="ingredients" >Ingredients</a></h1>
-        <h1><a href="javascript:onclick=instructionPage()" class="ingredientsAndInstructions" id="instructions" >Instructions</a></h1>
+        <h1><a href="javascript:onclick=ingredientsPage()">Ingredients</a></h1>
+        <h1><a href="javascript:onclick=instructionPage()">Instructions</a></h1>
         <div id="textboxOfInstructions">
             <ul>
             <li>Instuction One</li>  
@@ -136,20 +239,31 @@
             <li>Instuction Three</li>  
             </ul>
             <button>Add Instruction</button>
-        </div>    
+        </div>    -->
     </div><!--all elements of instructions page -->
     
     <div id="typeInRecipePageItself" class="hidden"><!--all elements of type in recipe page -->
-        <form id="endForm">
-        Name of Recipe:<br>
-        <input type="text" name="Name of Recipe">
-        Time it takes to make:<br>
-        <input type="text" name="time">
-        Ingredients Seperated by a comma:<br>
-        <input type="text" name="ingredients">
-        Instructions Seperated by a comma:<br>
-        <input type="text" name="instructions">
-        </form>
+    <section class="contentsOfAll">
+    <form>
+        <div class="form-group">
+            <label for="nameOfRecipe">Name of Recipe:</label>
+            <input type="text" class="form-control" id="nameOfRecipe"  placeholder="Enter name of recipe">
+        </div>
+        <div class="form-group">
+            <label for="time">Enter time it takes to make in minutes:</label>
+            <input type="text" class="form-control" id="time" placeholder="Time">
+        </div>
+        <div class="form-group">
+            <label for="ingredients">List ingredients seperated by a comma:</label>
+            <input type="text" class="form-control" id="ingredients" placeholder="Ingredients">
+        </div>
+        <div class="form-group">
+            <label for="instructions">List instructions seperated by a comma:</label>
+            <input type="text" class="form-control" id="instructions" placeholder="Instructions">
+        </div>
+        <button type="submit" class="btn btn-primary marginAtBottom">Submit</button>
+</form>    
+    </section>
     </div><!--all elements of type in recipe page -->
     
 </body>
